@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 
 <link rel="icon" href="assets/logos/mickjeets-white.png">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
 
@@ -39,7 +39,9 @@
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-inner">
       <img src="assets/logos/mickjeets-white.png" alt="Mick Jeets" class="hero-logo" data-reveal>
-      <img src="assets/photos/promo-hero.jpg" alt="Mick Jeets portrait" class="hero-photo" data-reveal>
+      <div class="hero-photo-frame" data-reveal>
+        <img src="assets/photos/hero-portrait.jpg" alt="Mick Jeets portrait" class="hero-photo">
+      </div>
       <p class="hero-tagline" data-reveal>
         Nostalgia and cathartic force, in tension. Mick Jeets weaves the pulse of American house and disco
         with the sub-heavy pressure of UK bass &mdash; chasing the feeling, one set at a time.
@@ -61,26 +63,29 @@
 
   <!-- ABOUT -->
   <section id="about" class="section about">
-    <div class="section-inner">
-      <h2 data-reveal>About</h2>
-      <p class="lede" data-reveal>
-        Mick Jeets is a Denver-based electronic music artist melding nostalgia and emotion to form his
-        cutting-edge sound.
-      </p>
-      <p data-reveal>
-        Paying homage to house, dubstep, and breakbeat, Mick Jeets's multigenre sets are as dynamic as they are
-        immersive &mdash; equally suited for an intimate club setting or a festival stage. With each production,
-        Mick Jeets crafts vivid sonic worldscapes that summon deep emotional resonance while delivering undeniable
-        dancefloor energy, drawing from nature&rsquo;s boundless beauty. Inspired by boundary-pushing artists like
-        Four Tet, Skrillex, and Caribou, Mick Jeets's performances bring people together, creating unforgettable moments
-        that transcend the music itself.
-      </p>
-      <p data-reveal>
-        A rising presence in Denver's electronic music scene, Mick Jeets has already left a mark: he's played at iconic
-        venues like Meow Wolf and The Black Box, as well as supported acts such as Nikki Nair, Mary Droppinz, Todd
-        Edwards, and Conducta. From dreamy soundscapes to chunky bass bangers, Mick Jeets bridges nostalgia and
-        innovation, channeling the introspective depths and euphoric highs that define electronic music.
-      </p>
+    <div class="section-inner about-grid">
+      <div class="about-text">
+        <h2 data-reveal>About</h2>
+        <p class="lede" data-reveal>
+          Mick Jeets is a Denver-based electronic music artist melding nostalgia and emotion to form his
+          cutting-edge sound.
+        </p>
+        <p data-reveal>
+          Paying homage to house, dubstep, and breakbeat, Mick Jeets's multigenre sets are as dynamic as they are
+          immersive &mdash; equally suited for an intimate club setting or a festival stage. With each production,
+          Mick Jeets crafts vivid sonic worldscapes that summon deep emotional resonance while delivering undeniable
+          dancefloor energy, drawing from nature&rsquo;s boundless beauty. Inspired by boundary-pushing artists like
+          Four Tet, Skrillex, and Caribou, Mick Jeets's performances bring people together, creating unforgettable moments
+          that transcend the music itself.
+        </p>
+        <p data-reveal>
+          A rising presence in Denver's electronic music scene, Mick Jeets has already left a mark: he's played at iconic
+          venues like Meow Wolf and The Black Box, as well as supported acts such as Nikki Nair, Mary Droppinz, Todd
+          Edwards, and Conducta. From dreamy soundscapes to chunky bass bangers, Mick Jeets bridges nostalgia and
+          innovation, channeling the introspective depths and euphoric highs that define electronic music.
+        </p>
+      </div>
+      <img src="assets/photos/dj-shoot-34.jpg" alt="Mick Jeets hanging from a bar in front of a mural" class="about-photo" data-reveal>
     </div>
   </section>
 
@@ -98,6 +103,32 @@
           </iframe>
         </div>
       </div>
+      <div class="accolades-grid" data-reveal>
+        <div class="accolade-card">
+          <img src="assets/covers/cover-ffd-feelingpetty.jpg" alt="Fresh Finds Dance playlist cover" class="accolade-cover">
+          <span class="accolade-playlist">Fresh Finds Dance</span>
+          <span class="accolade-followers">209K followers</span>
+          <span class="accolade-track">&ldquo;Feeling Petty On A Work Trip&rdquo;</span>
+        </div>
+        <div class="accolade-card">
+          <img src="assets/covers/cover-ff-feelingpetty.jpg" alt="Fresh Finds playlist cover" class="accolade-cover">
+          <span class="accolade-playlist">Fresh Finds</span>
+          <span class="accolade-followers">1.2M followers</span>
+          <span class="accolade-track">&ldquo;Feeling Petty On A Work Trip&rdquo;</span>
+        </div>
+        <div class="accolade-card">
+          <img src="assets/covers/cover-ffd-rose.jpg" alt="Fresh Finds Dance playlist cover" class="accolade-cover">
+          <span class="accolade-playlist">Fresh Finds Dance</span>
+          <span class="accolade-followers">208K followers</span>
+          <span class="accolade-track">&ldquo;Rose&rdquo;</span>
+        </div>
+        <div class="accolade-card">
+          <img src="assets/covers/cover-ffd-crashbaby.jpg" alt="Fresh Finds Dance playlist cover" class="accolade-cover">
+          <span class="accolade-playlist">Fresh Finds Dance</span>
+          <span class="accolade-followers">205K followers</span>
+          <span class="accolade-track">&ldquo;Crash Baby&rdquo;</span>
+        </div>
+      </div>
       <div class="platform-row" data-reveal>
         <a href="https://mickjeets.bandcamp.com" target="_blank" rel="noopener">Bandcamp</a>
         <a href="https://www.beatport.com/artist/mick-jeets/964378" target="_blank" rel="noopener">Beatport</a>
@@ -112,42 +143,36 @@
     <div class="section-inner">
       <h2 data-reveal>Photos</h2>
       <div class="gallery-grid" data-reveal>
-        <button class="gallery-item span-2" data-full="assets/photos/promo-hero.jpg">
-          <img src="assets/photos/promo-hero.jpg" alt="Mick Jeets promotional portrait" loading="lazy">
+        <button class="gallery-item span-2" data-full="assets/photos/meow-wolf-2.jpg">
+          <img src="assets/photos/meow-wolf-2.jpg" alt="Mick Jeets performing at Meow Wolf" loading="lazy">
         </button>
         <button class="gallery-item span-2" data-full="assets/photos/meow-wolf-1.jpg">
           <img src="assets/photos/meow-wolf-1.jpg" alt="Mick Jeets with a packed crowd at Meow Wolf" loading="lazy">
         </button>
-        <button class="gallery-item" data-full="assets/photos/dj-shoot-34.jpg">
-          <img src="assets/photos/dj-shoot-34.jpg" alt="Mick Jeets studio DJ shoot" loading="lazy">
+        <button class="gallery-item" data-full="assets/photos/larimer1018-221821.jpg">
+          <img src="assets/photos/larimer1018-221821.jpg" alt="Mick Jeets performing live at Larimer Lounge, October 2025" loading="lazy">
+        </button>
+        <button class="gallery-item" data-full="assets/photos/promo-hero.jpg">
+          <img src="assets/photos/promo-hero.jpg" alt="Mick Jeets promotional portrait" loading="lazy">
+        </button>
+        <button class="gallery-item" data-full="assets/photos/larimer-22.jpg">
+          <img src="assets/photos/larimer-22.jpg" alt="Mick Jeets performing live at Larimer Lounge" loading="lazy">
         </button>
         <button class="gallery-item gallery-video" data-video="assets/video/live-clip.mp4" data-full="assets/photos/live-clip-poster.jpg">
           <img src="assets/photos/live-clip-poster.jpg" alt="Mick Jeets live clip at Larimer Lounge" loading="lazy">
           <span class="play-badge" aria-hidden="true">&#9658;</span>
         </button>
-        <button class="gallery-item" data-full="assets/photos/meow-wolf-2.jpg">
-          <img src="assets/photos/meow-wolf-2.jpg" alt="Mick Jeets performing at Meow Wolf" loading="lazy">
-        </button>
         <button class="gallery-item" data-full="assets/photos/black-box.jpg">
           <img src="assets/photos/black-box.jpg" alt="Mick Jeets performing at The Black Box" loading="lazy">
-        </button>
-        <button class="gallery-item" data-full="assets/photos/larimer1018-221821.jpg">
-          <img src="assets/photos/larimer1018-221821.jpg" alt="Mick Jeets performing live at Larimer Lounge, October 2025" loading="lazy">
         </button>
         <button class="gallery-item" data-full="assets/photos/larimer1018-221230.jpg">
           <img src="assets/photos/larimer1018-221230.jpg" alt="Mick Jeets performing live at Larimer Lounge, October 2025" loading="lazy">
         </button>
-        <button class="gallery-item" data-full="assets/photos/larimer-branded.jpg">
-          <img src="assets/photos/larimer-branded.jpg" alt="Mick Jeets performing under the branded stage screen at Larimer Lounge" loading="lazy">
-        </button>
-        <button class="gallery-item" data-full="assets/photos/larimer-22.jpg">
-          <img src="assets/photos/larimer-22.jpg" alt="Mick Jeets performing live at Larimer Lounge" loading="lazy">
+        <button class="gallery-item" data-full="assets/photos/dj-shoot-34.jpg">
+          <img src="assets/photos/dj-shoot-34.jpg" alt="Mick Jeets studio DJ shoot" loading="lazy">
         </button>
         <button class="gallery-item" data-full="assets/photos/larimer-23.jpg">
           <img src="assets/photos/larimer-23.jpg" alt="Mick Jeets performing live at Larimer Lounge" loading="lazy">
-        </button>
-        <button class="gallery-item" data-full="assets/photos/crowd.jpg">
-          <img src="assets/photos/crowd.jpg" alt="Crowd energy at a Mick Jeets show" loading="lazy">
         </button>
       </div>
     </div>
@@ -161,24 +186,25 @@
       <div class="upcoming-card" data-reveal>
         <span class="tag">Upcoming</span>
         <div class="upcoming-details">
+          <span class="upcoming-title">TBA</span>
           <span class="upcoming-date">Oct 22&ndash;25, 2026</span>
           <span class="upcoming-venue">Apple Valley, CA</span>
         </div>
-        <a href="#contact" class="btn btn-primary btn-small">Inquire to Book</a>
       </div>
+      <a href="#contact" class="btn btn-primary btn-small inquire-cta" data-reveal>Inquire to Book</a>
 
       <h3 class="shows-subhead" data-reveal>Featured Past Shows</h3>
       <ul class="show-list" data-reveal>
-        <li><span class="show-role">Headline</span><span class="show-venue">Larimer Lounge</span><span class="show-date">Oct 18, 2025</span></li>
-        <li><span class="show-role">Direct Support &middot; Duskus</span><span class="show-venue">Denver, CO</span><span class="show-date">Dec 6, 2025</span></li>
-        <li><span class="show-role">Direct Support &middot; Player Dave</span><span class="show-venue">Denver, CO</span><span class="show-date">Oct 25, 2025</span></li>
-        <li><span class="show-role">Support</span><span class="show-venue">Meow Wolf</span><span class="show-date">Sep 17, 2025</span></li>
-        <li><span class="show-role">Headline</span><span class="show-venue">Sucia Summer</span><span class="show-date">Jun 6, 2026</span></li>
-        <li><span class="show-role">Headline</span><span class="show-venue">Larimer Lounge</span><span class="show-date">Dec 6, 2024</span></li>
-        <li><span class="show-role">Direct Support &middot; Todd Edwards &amp; Conducta</span><span class="show-venue">Denver, CO</span><span class="show-date">May 10, 2024</span></li>
-        <li><span class="show-role">Direct Support &middot; Mary Droppinz</span><span class="show-venue">Denver, CO</span><span class="show-date">Oct 20, 2023</span></li>
-        <li><span class="show-role">Direct Support &middot; Nikki Nair</span><span class="show-venue">Denver, CO</span><span class="show-date">Aug 25, 2023</span></li>
-        <li><span class="show-role">Support</span><span class="show-venue">Meow Wolf &mdash; Danceportation</span><span class="show-date">Jun 3, 2023</span></li>
+        <li><span class="show-role">Headline</span><span class="show-venue">Sucia Summer 2026, Kernville, CA</span><span class="show-date">Jun 6, 2026</span></li>
+        <li><span class="show-role">Direct Support &middot; Duskus</span><span class="show-venue">Club Vinyl, Denver, CO</span><span class="show-date">Dec 6, 2025</span></li>
+        <li><span class="show-role">Direct Support &middot; Player Dave</span><span class="show-venue">Club Vinyl, Denver, CO</span><span class="show-date">Oct 25, 2025</span></li>
+        <li><span class="show-role">Headline</span><span class="show-venue">Larimer Lounge, Denver, CO</span><span class="show-date">Oct 18, 2025</span></li>
+        <li><span class="show-role">Direct Support &middot; Sextile &amp; Automatic</span><span class="show-venue">Meow Wolf, Denver, CO</span><span class="show-date">Sep 17, 2025</span></li>
+        <li><span class="show-role">Headline</span><span class="show-venue">Larimer Lounge, Denver, CO</span><span class="show-date">Dec 6, 2024</span></li>
+        <li><span class="show-role">Direct Support &middot; Todd Edwards &amp; Conducta</span><span class="show-venue">1134 Broadway, Denver, CO</span><span class="show-date">May 10, 2024</span></li>
+        <li><span class="show-role">Direct Support &middot; Mary Droppinz</span><span class="show-venue">1134 Broadway, Denver, CO</span><span class="show-date">Oct 20, 2023</span></li>
+        <li><span class="show-role">Direct Support &middot; Nikki Nair</span><span class="show-venue">1134 Broadway, Denver, CO</span><span class="show-date">Aug 25, 2023</span></li>
+        <li><span class="show-role">Support for Danceportation</span><span class="show-venue">Meow Wolf, Denver, CO</span><span class="show-date">Jun 3, 2023</span></li>
       </ul>
     </div>
   </section>
