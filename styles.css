@@ -8,7 +8,6 @@
   --accent-2: #7c6cff;
   --border: rgba(244, 242, 238, 0.12);
   --max-w: 1120px;
-  --space-1: 0.5rem;
   --space-2: 1rem;
   --space-3: 2rem;
   --space-4: 4rem;
@@ -157,6 +156,7 @@ a { color: var(--fg); text-decoration: none; }
 
 .btn {
   display: inline-block;
+  cursor: pointer;
   padding: 0.85rem 1.75rem;
   border-radius: 999px;
   font-weight: 600;
@@ -247,22 +247,28 @@ a { color: var(--fg); text-decoration: none; }
 .accolade-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.4rem;
   text-align: center;
-  padding: var(--space-2) 1rem;
   background: var(--bg-alt);
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  overflow: hidden;
 }
 
 .accolade-cover {
-  width: 72px;
-  height: 72px;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
 }
+
+.accolade-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: var(--space-2) 1rem;
+}
+
 .accolade-playlist { font-weight: 700; color: var(--fg); font-size: 0.95rem; }
 .accolade-followers { font-size: 0.8rem; color: var(--accent-2); font-weight: 600; }
 .accolade-track { font-size: 0.78rem; color: var(--fg-dim); font-style: italic; }
@@ -334,7 +340,7 @@ a { color: var(--fg); text-decoration: none; }
   padding: 0.3rem 0.7rem;
   border-radius: 999px;
 }
-.upcoming-details { display: flex; flex-direction: column; gap: 0.2rem; margin-right: auto; }
+.upcoming-details { display: flex; flex-direction: column; gap: 0.2rem; }
 .upcoming-title { font-weight: 700; font-size: 1rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.04em; }
 .upcoming-date { font-weight: 700; font-size: 1.2rem; color: var(--fg); }
 .upcoming-venue { color: var(--fg-dim); }
@@ -382,7 +388,7 @@ a { color: var(--fg); text-decoration: none; }
   padding: var(--space-4) var(--space-3);
   border-top: 1px solid var(--border);
 }
-.footer-mark { height: 22px; width: auto; filter: invert(1); opacity: 0.7; }
+.footer-mark { height: 22px; width: auto; opacity: 0.7; }
 .social-row { display: flex; gap: var(--space-3); }
 .social-row a { font-size: 0.85rem; color: var(--fg-dim); }
 .social-row a:hover { color: var(--fg); }

@@ -9,11 +9,11 @@
 <!-- Open Graph -->
 <meta property="og:title" content="Mick Jeets — Electronic Press Kit">
 <meta property="og:description" content="Denver-based electronic music producer &amp; DJ melding nostalgia and emotion into cutting-edge dancefloor sound.">
-<meta property="og:image" content="assets/photos/promo-hero.jpg">
+<meta property="og:image" content="https://mickjeets.com/assets/photos/promo-hero.jpg">
 <meta property="og:type" content="website">
 
-<link rel="icon" href="assets/logos/mickjeets-white.png">
-<link rel="stylesheet" href="styles.css?v=8">
+<link rel="icon" href="assets/logos/mickjeets-black.png">
+<link rel="stylesheet" href="styles.css?v=10">
 </head>
 <body>
 
@@ -85,7 +85,7 @@
           innovation, channeling the introspective depths and euphoric highs that define electronic music.
         </p>
       </div>
-      <img src="assets/photos/dj-shoot-34.jpg" alt="Mick Jeets hanging from a bar in front of a mural" class="about-photo" data-reveal>
+      <img src="assets/photos/dj-shoot-34.jpg" alt="Mick Jeets hanging from a bar in front of a mural" class="about-photo" loading="lazy" data-reveal>
     </div>
   </section>
 
@@ -106,27 +106,35 @@
       <div class="accolades-grid" data-reveal>
         <div class="accolade-card">
           <img src="assets/covers/cover-ffd-feelingpetty.jpg" alt="Fresh Finds Dance playlist cover" class="accolade-cover">
-          <span class="accolade-playlist">Fresh Finds Dance</span>
-          <span class="accolade-followers">209K followers</span>
-          <span class="accolade-track">&ldquo;Feeling Petty On A Work Trip&rdquo;</span>
+          <div class="accolade-info">
+            <span class="accolade-playlist">Fresh Finds Dance</span>
+            <span class="accolade-followers">209K followers</span>
+            <span class="accolade-track">&ldquo;Feeling Petty On A Work Trip&rdquo;</span>
+          </div>
         </div>
         <div class="accolade-card">
           <img src="assets/covers/cover-ff-feelingpetty.jpg" alt="Fresh Finds playlist cover" class="accolade-cover">
-          <span class="accolade-playlist">Fresh Finds</span>
-          <span class="accolade-followers">1.2M followers</span>
-          <span class="accolade-track">&ldquo;Feeling Petty On A Work Trip&rdquo;</span>
+          <div class="accolade-info">
+            <span class="accolade-playlist">Fresh Finds</span>
+            <span class="accolade-followers">1.2M followers</span>
+            <span class="accolade-track">&ldquo;Feeling Petty On A Work Trip&rdquo;</span>
+          </div>
         </div>
         <div class="accolade-card">
           <img src="assets/covers/cover-ffd-rose.jpg" alt="Fresh Finds Dance playlist cover" class="accolade-cover">
-          <span class="accolade-playlist">Fresh Finds Dance</span>
-          <span class="accolade-followers">208K followers</span>
-          <span class="accolade-track">&ldquo;Rose&rdquo;</span>
+          <div class="accolade-info">
+            <span class="accolade-playlist">Fresh Finds Dance</span>
+            <span class="accolade-followers">208K followers</span>
+            <span class="accolade-track">&ldquo;Rose&rdquo;</span>
+          </div>
         </div>
         <div class="accolade-card">
           <img src="assets/covers/cover-ffd-crashbaby.jpg" alt="Fresh Finds Dance playlist cover" class="accolade-cover">
-          <span class="accolade-playlist">Fresh Finds Dance</span>
-          <span class="accolade-followers">205K followers</span>
-          <span class="accolade-track">&ldquo;Crash Baby&rdquo;</span>
+          <div class="accolade-info">
+            <span class="accolade-playlist">Fresh Finds Dance</span>
+            <span class="accolade-followers">205K followers</span>
+            <span class="accolade-track">&ldquo;Crash Baby&rdquo;</span>
+          </div>
         </div>
       </div>
       <div class="platform-row" data-reveal>
@@ -162,14 +170,14 @@
           <img src="assets/photos/live-clip-poster.jpg" alt="Mick Jeets live clip at Larimer Lounge" loading="lazy">
           <span class="play-badge" aria-hidden="true">&#9658;</span>
         </button>
+        <button class="gallery-item" data-full="assets/photos/dj-shoot-14.jpg">
+          <img src="assets/photos/dj-shoot-14.jpg" alt="Mick Jeets DJ shoot in an elevator" loading="lazy">
+        </button>
         <button class="gallery-item" data-full="assets/photos/black-box.jpg">
           <img src="assets/photos/black-box.jpg" alt="Mick Jeets performing at The Black Box" loading="lazy">
         </button>
         <button class="gallery-item" data-full="assets/photos/larimer1018-221230.jpg">
           <img src="assets/photos/larimer1018-221230.jpg" alt="Mick Jeets performing live at Larimer Lounge, October 2025" loading="lazy">
-        </button>
-        <button class="gallery-item" data-full="assets/photos/dj-shoot-34.jpg">
-          <img src="assets/photos/dj-shoot-34.jpg" alt="Mick Jeets studio DJ shoot" loading="lazy">
         </button>
         <button class="gallery-item" data-full="assets/photos/larimer-23.jpg">
           <img src="assets/photos/larimer-23.jpg" alt="Mick Jeets performing live at Larimer Lounge" loading="lazy">
@@ -221,7 +229,7 @@
 </main>
 
 <footer class="site-footer">
-  <img src="assets/logos/mickjeets-black.png" alt="Mick Jeets" class="footer-mark">
+  <img src="assets/logos/mickjeets-white.png" alt="Mick Jeets" class="footer-mark">
   <div class="social-row">
     <a href="https://instagram.com/mickjeets" target="_blank" rel="noopener">Instagram</a>
     <a href="https://twitch.tv/mickjeets" target="_blank" rel="noopener">Twitch</a>
@@ -234,7 +242,7 @@
 <!-- Lightbox -->
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
   <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
-  <img id="lightbox-img" src="" alt="">
+  <img id="lightbox-img" alt="">
 </div>
 
 <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
