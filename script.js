@@ -89,7 +89,7 @@ function closeLightbox() {
   stopLightboxVideo();
 }
 
-document.querySelectorAll(".gallery-item").forEach((btn) => {
+document.querySelectorAll(".gallery-item, .hero-watch").forEach((btn) => {
   btn.addEventListener("click", () => {
     const video = btn.getAttribute("data-video");
     const full = btn.getAttribute("data-full");
