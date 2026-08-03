@@ -2,21 +2,6 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-// ---------- Smooth scroll (Lenis) ----------
-if (!prefersReducedMotion && window.Lenis) {
-  const lenis = new Lenis({ duration: 1.1, smoothWheel: true });
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-  requestAnimationFrame(raf);
-  if (window.gsap && window.ScrollTrigger) {
-    lenis.on("scroll", ScrollTrigger.update);
-    gsap.ticker.add((time) => lenis.raf(time * 1000));
-    gsap.ticker.lagSmoothing(0);
-  }
-}
-
 // ---------- Scroll reveals (GSAP ScrollTrigger) ----------
 document.documentElement.classList.add("reveal-ready");
 

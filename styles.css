@@ -319,6 +319,12 @@ a { color: var(--fg); text-decoration: none; }
 }
 
 /* Shows */
+.upcoming-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
 .upcoming-card {
   display: flex;
   flex-wrap: wrap;
@@ -328,8 +334,8 @@ a { color: var(--fg); text-decoration: none; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: var(--space-3);
-  margin-bottom: var(--space-4);
 }
+.upcoming-tickets { margin-left: auto; }
 .upcoming-card .tag {
   background: var(--accent);
   color: var(--bg);
